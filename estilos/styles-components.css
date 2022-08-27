@@ -90,7 +90,8 @@ a:hover{
 }
 /* FIN DEL HEADER */
 
-/* SECCION INICIO */
+/* START SECCIONS */
+/* START INICIO, ACERCA DE, CONTACTO */
 .front{
     position: relative;
     z-index: 2;
@@ -101,9 +102,9 @@ a:hover{
 section{
     position: relative;
     /* border: 1px red solid; */
-    height: calc(100vh - 98px);
+    height: 100vh;
 }
-section > div{
+.parent{
     width: 100%;
     position: absolute;
     height: 90%;
@@ -142,7 +143,83 @@ section > div{
     right: 340px;
     z-index: 1;
 }
+/* END INICIO, ACERCA DE, CONTACTO */
+/* CATALOGO */
+.parent__catalogo{
+    width: 100%;
+    height: 90%;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_bg);
+}
+.catalogo{
+    background-color: var(--color_bg);
+}
+.catalogo--head{
+    display: flex;
+    justify-content: space-between;
+}
+.catalogo--head a{
+    text-decoration: none;    
+}
+.pd-10{
+    padding-right: 10px;
+}
+.sky-dark-title{
+    color: var(--color_sky_dark);
+    position: relative;
+    font-weight: 700;
+    left: 30px;
+}
+.color-black{
+    color: var(--color_black);
+}
+/* cards */
+.catalogo__cards{
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+.catalogo__card{
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 12px rgba(0,0,0, .2);
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+.catalogo__picture{
+    width: 100%;
+    height: 50%;
+    display: block;
+    object-fit: cover;
+}
+.catalogo__texts{    
+    position: relative;
+    padding: 2em;
+}
+.catalogo__title{
+    font-size: 1.3rem;
+    text-align: left;
+    color: var(--white);
+}
+.catalogo__paragraph{
+    font-weight: 300;
+    margin: 30px 0;
+}
+.rg-0{
+    display: flex;
+    justify-content: end;
+}
 
+/* FIN card */
+/* FIN CATALOGO */
+/* FIN SECCIONS */
 
 /* INICIO DEL FOOTER */
 footer{
@@ -181,7 +258,7 @@ footer{
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
     padding: 0 20px;
     width: 175px;
@@ -236,11 +313,12 @@ footer{
     /* FIN DEL FOOTER */
 
     /* START SECTIONS */
+    /* START INICIO, ACERCA DE, CONTACTO */
     .section{
         width: 100vw;
         overflow: hidden;
     }
-    section > div{
+    .parent{
         font-size: .8rem;
         gap: 5px;
     }
@@ -263,5 +341,14 @@ footer{
         top: -10px;
         right: 8vw;
     }
+    /* END INICIO, ACERCA DE, CONTACTO */
+    /* START CATALOGO */
+    .catalogo__cards{
+        row-gap: 2rem;
+    }
+    .catalogo__card{
+        width: 100%;
+    }
+    /* END CATALOGO */
     /* FIN SECTIONS */
 }

@@ -36,13 +36,13 @@
                   <a class="nav-link" href="#contacto">Contacto</a>
               </li>    
               <li class="nav-item">
-                  <a class="nav-link" href="#">Catálogo</a>
+                  <a class="nav-link" href="#catalogo">Catálogo</a>
               </li>  
               <li class="nav-item">
-                  <a class="nav-link" href="#">Iniciar Sesión</a>
+                  <a class="nav-link" href="#login">Iniciar Sesión</a>
               </li> 
               <li class="nav-item">
-                  <a class="nav-link" href="#">Registrarse</a>
+                  <a class="nav-link" href="#register">Registrarse</a>
               </li>    
           </ul>
           </div>
@@ -53,12 +53,12 @@
 
 <!-- START SECTION INICIO -->
   <section class="mt-98" id="inicio">
-    <div>
+    <div class="parent">
       <div class="contenedor">
         <h4 class="section-title">Descubre nuestros productos.</h4>
         <p class="color-gray">The next big thing starts here. Start building with Prodify and be the first to market with a product that is ready to take on the competition and delight your customers</p>
         <div class="boton-shop">
-          <a href="">Ir a la tienda ></a>
+          <a href="#catalogo">Ir al Catálogo ></a>
         </div>
         <div class="mt-98 color-gray">
           <span>Desarrollado por</span><br>
@@ -75,7 +75,7 @@
 
   <!-- START SECTION ABOUT -->
   <section id="acerca">
-    <div>
+    <div class="parent">
       <div class="contenedor">
         <h4 class="section-title">Acerca de.</h4>
         <p class="color-gray">The next big thing starts here. Start building with Prodify and be the first to market with a product that is ready to take on the competition and delight your customers.
@@ -94,7 +94,7 @@
 
   <!-- START SECTION CONTACT -->
   <section id="contacto">
-    <div>
+    <div class="parent">
       <div class="contenedor front">
         <h4 class="section-title">Contacto.</h4>
         <p class="color-gray">Hablemos. No dudes en ponerte en contacto con nosotros mediante la siguiente información que dejaremos sobre nuestra ubicación y otros medios para comunicarte estaremos gustosos de responder tus dudas o inquietudes.
@@ -116,9 +116,60 @@
   </section>
   <!-- FIN SECTION CONTACT -->
 
+  <!-- INICIO DEL CATALOGO  -->
+  <div class="catalogo--head">
+    <p class="sky-dark-title">Artículos</p>
+    <a class="color-black pd-10" href="#"><iconify-icon class="pd-10" icon="logos:whatsapp-icon"></iconify-icon>Contactar</a>
+  </div>
+  
+  <hr>
+  <div id="catalogo">
+    <div class="parent__catalogo">
+      <div class="catalogo__cards">
+        <article class="catalogo__card">
+          <img src="./images/laptop.png" class="catalogo__picture" alt="project-one">
+          <div class="catalogo__texts">
+            <h3 class="catalogo__title">Laptop HP 15-dy3000.</h3>
+            <p class="catalogo__paragraph">Procesador intel, disco sólido..</p>
+            <p class="catalogo__paragraph rg-0">$ 850.00</p>
+          </div>
+        </article>
 
+        <article class="catalogo__card">
+          <img src="./images/img-def.png" class="catalogo__picture" alt="project-one">
+          <div class="catalogo__texts">
+            <h3 class="catalogo__title">Articulo.</h3>
+            <p class="catalogo__paragraph">Descripción corta.</p>
+            <p class="catalogo__paragraph rg-0">$ 0.00</p>
+          </div>
+        </article>
 
-<!-- INICIO DEL FOOTER  -->
+        <article class="catalogo__card">
+          <img src="./images/img-def.png" class="catalogo__picture" alt="project-one">
+          <div class="catalogo__texts">
+            <h3 class="catalogo__title">Articulo.</h3>
+            <p class="catalogo__paragraph">Descripción corta.</p>
+            <p class="catalogo__paragraph rg-0">$ 0.00</p>
+          </div>
+        </article>
+
+        <article class="catalogo__card">
+          <img src="./images/img-def.png" class="catalogo__picture" alt="project-one">
+          <div class="catalogo__texts">
+            <h3 class="catalogo__title">Articulo.</h3>
+            <p class="catalogo__paragraph">Descripción corta.</p>
+            <p class="catalogo__paragraph rg-0">$ 0.00</p>
+          </div>
+        </article>
+
+      </div>      
+    </div>
+  </div>
+  <!-- FIN DEL CATALOGO  -->
+
+  
+
+  <!-- INICIO DEL FOOTER  -->
   <footer>
     <div class="footer-social-media">
       <a class="footer-logo" href="#">
@@ -141,9 +192,9 @@
       <p>electrónicaepn@gmail.com</p>
     </div>
     <div class="footer-shop">
-      <h6 class="footer-title center">Tienda</h6>
+      <h6 class="footer-title center">Catálogo</h6>
       <div class="boton-shop">
-        <a href="">Ir a la tienda ></a>
+        <a href="#catalogo">Ir al Catálogo ></a>
       </div>
     </div>
   </footer>
